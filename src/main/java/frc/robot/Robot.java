@@ -27,7 +27,9 @@ public class Robot extends TimedRobot {
    * initialization code.
    */
   @Override
-  public void robotInit() {}
+  public void robotInit() {
+    motor1.burnFlash(); // REINICIAR SPARK
+  }
 
   @Override
   public void robotPeriodic() {}
