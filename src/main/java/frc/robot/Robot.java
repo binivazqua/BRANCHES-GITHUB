@@ -29,6 +29,7 @@ public class Robot extends TimedRobot {
   @Override
   public void robotInit() {
     motor1.burnFlash(); // REINICIAR SPARK
+    motor2.setInverted(true); // INVERTIR SPARK
   }
 
   @Override
