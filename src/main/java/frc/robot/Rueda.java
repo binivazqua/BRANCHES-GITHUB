@@ -6,8 +6,10 @@
 package frc.robot;
 
 import com.revrobotics.CANSparkMax;
+import com.revrobotics.RelativeEncoder;
 import com.revrobotics.CANSparkLowLevel.MotorType;
 
+import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.TimedRobot;
 
 /**
@@ -22,12 +24,16 @@ public class Rueda extends TimedRobot {
   CANSparkMax motor2 = new CANSparkMax(2, MotorType.kBrushless);
   CANSparkMax motor3 = new CANSparkMax(4, MotorType.kBrushless);
 
+  //Chasis
   CANSparkMax motorDerecho1 = new CANSparkMax(1, MotorType.kBrushless);
   CANSparkMax motorDerecho2 = new CANSparkMax(2, MotorType.kBrushless);
   CANSparkMax motorIzquierdo1 = new CANSparkMax(3, MotorType.kBrushless);
   CANSparkMax motorIzquierdo2 = new CANSparkMax(4, MotorType.kBrushless);
-  //RelativeEncoder encoderChasisIzquierdo;
-  //RelativeEncoder encoderChasisDerecho;
+  //Encoders chasis
+  RelativeEncoder encoderChasisIzquierdo;
+  RelativeEncoder encoderChasisDerecho;
+  //Declaración de control
+  Joystick control = new Joystick(0);
 
 
   /**
