@@ -16,7 +16,7 @@ import edu.wpi.first.wpilibj.TimedRobot;
  * the package after creating this project, you must also update the build.gradle file in the
  * project.
  */
-public class Robot extends TimedRobot {
+public class Priss extends TimedRobot {
 
   CANSparkMax motor1 = new CANSparkMax(1, MotorType.kBrushless);
   CANSparkMax motor2 = new CANSparkMax(2, MotorType.kBrushless);
