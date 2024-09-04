@@ -24,7 +24,7 @@ public class Priss extends TimedRobot {
   CANSparkMax motorintake = new CANSparkMax(5, MotorType.kBrushless);
   CANSparkMax motorintake1 = new CANSparkMax(7,MotorType.kBrushless);
 
-  Joystick placer = new Joystick(2);
+
 
   /**
    * This function is run when the robot is first started up and should be used for any
@@ -38,6 +38,7 @@ public class Priss extends TimedRobot {
      * CAMBIO A FALSE (28/08)
      */
     motor1.follow(motor2); // FOLLOWERS
+    motorintake.follow(motorintake1); 
   }
 
   @Override
@@ -53,7 +54,20 @@ public class Priss extends TimedRobot {
   public void teleopInit() {}
 
   @Override
-  public void teleopPeriodic() {}
+  public void teleopPeriodic() {
+
+    if () {
+      motorintake.set(-0.3);
+    }
+
+    if () {
+      motorintake.set(-0.2);
+    }
+
+    if () {
+      motorintake.set(-0.4);
+    }
+  }
 
   @Override
   public void disabledInit() {}
