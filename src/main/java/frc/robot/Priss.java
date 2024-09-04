@@ -17,6 +17,7 @@ import edu.wpi.first.wpilibj.TimedRobot;
  * project.
  */
 public class Priss extends TimedRobot {
+  TejuinoBoard leds = new TejuinoBoard();
 
   CANSparkMax motor1 = new CANSparkMax(1, MotorType.kBrushless);
   CANSparkMax motor2 = new CANSparkMax(2, MotorType.kBrushless);
@@ -54,20 +55,7 @@ public class Priss extends TimedRobot {
   public void teleopInit() {}
 
   @Override
-  public void teleopPeriodic() {
-
-    if () {
-      motorintake.set(-0.3);
-    }
-
-    if () {
-      motorintake.set(-0.2);
-    }
-
-    if () {
-      motorintake.set(-0.4);
-    }
-  }
+  public void teleopPeriodic() {}
 
   @Override
   public void disabledInit() {}
